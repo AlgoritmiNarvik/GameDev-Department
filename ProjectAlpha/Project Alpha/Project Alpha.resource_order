@@ -16,5 +16,13 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"ObjWall","order":1,"path":"objects/ObjWall/ObjWall.yy",},
+    {"name":"testRoom","order":1,"path":"rooms/testRoom/testRoom.yy",},
+    {"name":"axesAlignedCollisionHandling","order":1,"path":"scripts/axesAlignedCollisionHandling/axesAlignedCollisionHandling.yy",},
+    {"name":"sprHitBox","order":3,"path":"sprites/sprHitBox/sprHitBox.yy",},
+    {"name":"sprTemp","order":1,"path":"sprites/sprTemp/sprTemp.yy",},
+    {"name":"sprTriggerBox","order":2,"path":"sprites/sprTriggerBox/sprTriggerBox.yy",},
+    {"name":"sprWall","order":1,"path":"sprites/sprWall/sprWall.yy",},
+  ],
 }

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"axesAlignedCollisionHandling",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"axesAlignedCollisionHandling",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
