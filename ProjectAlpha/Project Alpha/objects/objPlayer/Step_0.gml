@@ -34,12 +34,15 @@ if((velocityX != 0 or velocityY != 0) and !attacking) {
 }
 velocityX *= moveSpeed*delta_time/100000*(attackSlowDown*attacking + !attacking);
 velocityY *= moveSpeed*delta_time/100000*(attackSlowDown*attacking + !attacking);
-axesAlignedCollisionHandling();
 
-x += velocityX;
-y += velocityY;
+
+move_and_collide(velocityX, velocityY, ObjWall);
+
+//axesAlignedCollisionHandling()
+//x += velocityX;
+//y += velocityY;
 
 if(attacking) {
-	hitBoxID.x = x+attackDirX*16;
-	hitBoxID.y = y+attackDirY*16;
+	hitBoxID.x = x+attackDirX*32;
+	hitBoxID.y = y+attackDirY*32;
 }
