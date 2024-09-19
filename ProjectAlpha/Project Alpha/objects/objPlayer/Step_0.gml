@@ -23,3 +23,5 @@ if(is_nan(velocityX) or is_nan(velocityY)) return;
 velocityX *= moveSpeed*delta_time/100000;
 velocityY *= moveSpeed*delta_time/100000;
 axesAlignedCollisionHandling();
+x += velocityX;
+y += velocityY;
