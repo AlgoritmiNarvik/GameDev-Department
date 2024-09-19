@@ -30,7 +30,7 @@
     {"$GMObjectProperty":"v1","%Name":"velocityX","filters":[],"listItems":[],"multiselect":false,"name":"velocityX","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"velocityY","filters":[],"listItems":[],"multiselect":false,"name":"velocityY","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"moveSpeed","filters":[],"listItems":[],"multiselect":false,"name":"moveSpeed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"50","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"controlScheme","filters":[],"listItems":[],"multiselect":false,"name":"controlScheme","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"WASD","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"controlScheme","filters":[],"listItems":[],"multiselect":false,"name":"controlScheme","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"arrowKeys","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"inputDevice","filters":[],"listItems":[],"multiselect":false,"name":"inputDevice","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
