@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"ObjWall",
+  "%Name":"objPlayerHitBox",
   "eventList":[],
   "managed":true,
-  "name":"ObjWall",
+  "name":"objPlayerHitBox",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprWall",
-    "path":"sprites/sprWall/sprWall.yy",
+    "name":"sprHitBox",
+    "path":"sprites/sprHitBox/sprHitBox.yy",
   },
   "spriteMaskId":null,
   "visible":true,
