@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Hearts",
-    "path":"folders/Sprites/PlayerSprites/Hearts.yy",
+    "path":"folders/Sprites/GUI/Hearts.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

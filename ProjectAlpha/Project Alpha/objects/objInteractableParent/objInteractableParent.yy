@@ -30,6 +30,7 @@
     {"$GMObjectProperty":"v1","%Name":"isPressed","filters":[],"listItems":[],"multiselect":false,"name":"isPressed","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"buttonPromptX","filters":[],"listItems":[],"multiselect":false,"name":"buttonPromptX","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"buttonPromptY","filters":[],"listItems":[],"multiselect":false,"name":"buttonPromptY","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"animationFrame","filters":[],"listItems":[],"multiselect":false,"name":"animationFrame","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

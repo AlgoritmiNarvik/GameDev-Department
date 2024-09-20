@@ -36,7 +36,7 @@ velocityX *= moveSpeed*delta_time/100000*(attackSlowDown*attacking + !attacking)
 velocityY *= moveSpeed*delta_time/100000*(attackSlowDown*attacking + !attacking);
 
 
-move_and_collide(velocityX, velocityY, ObjWall);
+move_and_collide(velocityX, velocityY, [ObjWall, ObjHole]);
 
 //axesAlignedCollisionHandling()
 //x += velocityX;

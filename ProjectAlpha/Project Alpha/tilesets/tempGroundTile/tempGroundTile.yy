@@ -2,7 +2,7 @@
   "$GMTileSet":"v1",
   "%Name":"tempGroundTile",
   "autoTileSets":[
-    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[18,1,2,3,5,6,7,8,10,11,12,13,15,16,17,4,],},
+    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[21,1,2,3,6,7,8,9,12,13,14,15,18,19,20,4,],},
   ],
   "macroPageTiles":{
     "SerialiseHeight":0,
@@ -10,7 +10,7 @@
     "TileSerialiseData":[],
   },
   "name":"tempGroundTile",
-  "out_columns":4,
+  "out_columns":5,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -36,5 +36,5 @@
   "tileWidth":16,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":20,
+  "tile_count":24,
 }

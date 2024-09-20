@@ -4,4 +4,3 @@ hitBoxID = instance_create_depth(x,y, depth, objPlayerHitBox);
 hitBoxID.image_xscale = 2;
 hitBoxID.image_yscale = 2;
 instance_deactivate_object(hitBoxID);
-image_speed = 0;
