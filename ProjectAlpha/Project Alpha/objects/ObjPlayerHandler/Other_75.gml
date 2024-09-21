@@ -11,7 +11,9 @@ switch(async_load[? "event_type"]) {
 	    ds_map_delete(gamepads, pad);
 		for(var i = 0; i < 4; i++) {
 			if(players[i].inputDevice == pad) {
-				players[i].controlScheme = "controller";
+				players[i].controlScheme = "";
+				players[i].inputDevice = -1;
+				ds_map_replace(gamepads, pad, 0);
 				instance_deactivate_object(players[i]);
 				playerCount--;
 				break;
