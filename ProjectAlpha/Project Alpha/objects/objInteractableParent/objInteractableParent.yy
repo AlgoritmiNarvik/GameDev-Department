@@ -9,8 +9,8 @@
   "name":"objInteractableParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"ParentObjects",
+    "path":"folders/Objects/ParentObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

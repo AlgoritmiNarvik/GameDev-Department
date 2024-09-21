@@ -1,3 +1,3 @@
 /// @description Insert description here
-instance_deactivate_object(hitBoxID);
+hitBoxID.image_xscale = 0;
 attacking = false;

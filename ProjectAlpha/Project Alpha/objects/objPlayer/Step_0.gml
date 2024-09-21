@@ -2,6 +2,7 @@ switch(controlScheme) {
 	case("WASD"): {
 		velocityX = keyboard_check_direct(ord("D")) - keyboard_check_direct(ord("A"));
 		velocityY = keyboard_check_direct(ord("S")) - keyboard_check_direct(ord("W"));
+		attack = keyboard_check_pressed(vk_space);
 		normalise();
 		break;
 	}
@@ -17,13 +18,14 @@ switch(controlScheme) {
 		velocityY = gamepad_axis_value(inputDevice, gp_axislv);
 		velocityX *= abs(velocityX);
 		velocityY *= abs(velocityY);
+		attack = gamepad_button_check_pressed(inputDevice, gp_face1);
 		break;
 	}
 }
 if(alarm[0] < 0 and attack) {
 	attacking = true;
 	alarm[0] = attackSpeed*fps;
-	instance_activate_object(hitBoxID);
+	hitBoxID.image_xscale = 2;
 	alarm[1] = attackDuration*fps;
 }
 if(is_nan(velocityX)) velocityX  = 0;
