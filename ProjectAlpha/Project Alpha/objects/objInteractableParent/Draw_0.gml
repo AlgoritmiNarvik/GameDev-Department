@@ -7,6 +7,7 @@ if(isPressed) {
 } else if(playerID != noone and !isPressed) {
 	draw_set_alpha(1);
 	animationFrame += 7/fps;
+	animationFrame %= 1000;
 	var px = (bbox_right+bbox_left)/2 + buttonPromptX;
 	var py = (bbox_top+bbox_bottom)/2 + buttonPromptY;
 	draw_set_halign(fa_center);

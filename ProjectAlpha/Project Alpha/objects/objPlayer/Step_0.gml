@@ -3,12 +3,18 @@ switch(controlScheme) {
 		velocityX = keyboard_check_direct(ord("D")) - keyboard_check_direct(ord("A"));
 		velocityY = keyboard_check_direct(ord("S")) - keyboard_check_direct(ord("W"));
 		attack = keyboard_check_pressed(vk_space);
+		var temp = normalise(velocityX, velocityY);
+		velocityX = temp[0];
+		velocityY = temp[1];
 		break;
 	}
 	case("arrowKeys"): {
 		velocityX = keyboard_check_direct(vk_right) - keyboard_check_direct(vk_left);
 		velocityY = keyboard_check_direct(vk_down) - keyboard_check_direct(vk_up);
 		attack = keyboard_check_pressed(ord("C"));
+		var temp = normalise(velocityX, velocityY);
+		velocityX = temp[0];
+		velocityY = temp[1];
 		break;
 	}
 	case("controller"): {
@@ -18,7 +24,7 @@ switch(controlScheme) {
 		break;
 	}
 }
-normalise();
+
 if(alarm[0] < 0 and attack) {
 	attacking = true;
 	alarm[0] = attackSpeed*fps;
@@ -28,8 +34,9 @@ if(alarm[0] < 0 and attack) {
 if(is_nan(velocityX)) velocityX  = 0;
 if(is_nan(velocityY)) velocityY  = 0;
 if((velocityX != 0 or velocityY != 0) and !attacking) {
-	attackDirX = velocityX;
-	attackDirY = velocityY;
+	var temp = normalise(velocityX, velocityY);
+	attackDirX = temp[0];
+	attackDirY = temp[1];
 }
 velocityX *= moveSpeed*delta_time/100000*(attackSlowDown*attacking + !attacking);
 velocityY *= moveSpeed*delta_time/100000*(attackSlowDown*attacking + !attacking);
