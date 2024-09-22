@@ -35,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"SprSysGear",
+    "path":"sprites/SprSysGear/SprSysGear.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -7,7 +7,7 @@ if(pause) {
 	if(surface_exists(pauseSurface)) {
 		draw_surface(pauseSurface, 0, 0);
 	} else {
-		pauseSurface = surface_create(view_wport[0], view_hport[0]); // Might have to change this when I'm adding split screen
+		pauseSurface = surface_create(window_get_width(), window_get_height()); 
 		buffer_set_surface(pauseSurfaceBuffer, pauseSurface, 0);
 	}
 	surface_reset_target();
@@ -27,13 +27,13 @@ if(pause) {
 		}
 	}
 	
-	pauseSurface = surface_create(view_wport[0], view_hport[0]); // Might have to change this when I'm adding split 
+	pauseSurface = surface_create(window_get_width(), window_get_height()); 
 	surface_set_target(pauseSurface);
 	draw_surface(application_surface, 0, 0);
 	surface_reset_target();
 	
 	if(buffer_exists(pauseSurfaceBuffer)) buffer_delete(pauseSurfaceBuffer);
-	pauseSurfaceBuffer = buffer_create(view_wport[0]*view_hport[0]*4, buffer_fixed, 1); // Might have to change this when I'm adding split 
+	pauseSurfaceBuffer = buffer_create(window_get_width()*window_get_height()*4, buffer_fixed, 1);
 	buffer_get_surface(pauseSurfaceBuffer, pauseSurface, 0);
 	
 } else {

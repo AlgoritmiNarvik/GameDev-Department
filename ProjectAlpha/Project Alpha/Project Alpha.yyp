@@ -45,7 +45,9 @@
   },
   "name":"Project Alpha",
   "resources":[
+    {"id":{"name":"ObjCamHandler","path":"objects/ObjCamHandler/ObjCamHandler.yy",},},
     {"id":{"name":"ObjHole","path":"objects/ObjHole/ObjHole.yy",},},
+    {"id":{"name":"ObjInit","path":"objects/ObjInit/ObjInit.yy",},},
     {"id":{"name":"objInteractableParent","path":"objects/objInteractableParent/objInteractableParent.yy",},},
     {"id":{"name":"ObjPauseHandler","path":"objects/ObjPauseHandler/ObjPauseHandler.yy",},},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
@@ -53,6 +55,7 @@
     {"id":{"name":"objPlayerHitBox","path":"objects/objPlayerHitBox/objPlayerHitBox.yy",},},
     {"id":{"name":"ObjTestSign","path":"objects/ObjTestSign/ObjTestSign.yy",},},
     {"id":{"name":"ObjWall","path":"objects/ObjWall/ObjWall.yy",},},
+    {"id":{"name":"InitialisingRoom","path":"rooms/InitialisingRoom/InitialisingRoom.yy",},},
     {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
     {"id":{"name":"normalise","path":"scripts/normalise/normalise.yy",},},
     {"id":{"name":"scrPause","path":"scripts/scrPause/scrPause.yy",},},
@@ -65,6 +68,7 @@
     {"id":{"name":"SprHeart","path":"sprites/SprHeart/SprHeart.yy",},},
     {"id":{"name":"sprHitBox","path":"sprites/sprHitBox/sprHitBox.yy",},},
     {"id":{"name":"sprHole","path":"sprites/sprHole/sprHole.yy",},},
+    {"id":{"name":"SprSysGear","path":"sprites/SprSysGear/SprSysGear.yy",},},
     {"id":{"name":"sprTeleport","path":"sprites/sprTeleport/sprTeleport.yy",},},
     {"id":{"name":"sprTemp","path":"sprites/sprTemp/sprTemp.yy",},},
     {"id":{"name":"sprTestSign","path":"sprites/sprTestSign/sprTestSign.yy",},},
@@ -78,6 +82,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"InitialisingRoom","path":"rooms/InitialisingRoom/InitialisingRoom.yy",},},
     {"roomId":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
   ],
   "templateType":"game",
