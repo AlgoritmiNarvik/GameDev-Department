@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var fullHarts = floor(hp/2);
+var fullHarts = floor(hp/2); 
 var i = 0
 var size = 54;
 var sp = 5;

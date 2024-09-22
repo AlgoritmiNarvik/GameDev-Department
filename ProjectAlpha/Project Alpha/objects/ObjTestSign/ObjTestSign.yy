@@ -34,7 +34,9 @@
     {"x":0.0,"y":32.0,},
   ],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"camHandler","filters":[],"listItems":[],"multiselect":false,"name":"camHandler","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"ObjCamHandler","path":"objects/ObjCamHandler/ObjCamHandler.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"ObjCamHandler","varType":5,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

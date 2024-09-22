@@ -15,6 +15,8 @@
     {"$GMSpriteFrame":"","%Name":"455bb1b3-ef69-4f15-9c0c-8bec8dc7881f","name":"455bb1b3-ef69-4f15-9c0c-8bec8dc7881f","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"03e79ff5-a7d9-4718-b338-c01c2fece24c","name":"03e79ff5-a7d9-4718-b338-c01c2fece24c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"cd5d5221-dd36-4926-a32c-4f4a604b0ac3","name":"cd5d5221-dd36-4926-a32c-4f4a604b0ac3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2793e12d-36ba-49a5-9155-ea2fa175f8a0","name":"2793e12d-36ba-49a5-9155-ea2fa175f8a0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"511c407c-5ed6-4c42-9044-cb5c38be4f5c","name":"511c407c-5ed6-4c42-9044-cb5c38be4f5c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -51,7 +53,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":3.0,
+    "length":5.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -79,6 +81,12 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"cd5d5221-dd36-4926-a32c-4f4a604b0ac3","path":"sprites/SprXButtonControl/SprXButtonControl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"30836b5d-74bc-4a63-9c07-bf154faf3703","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2793e12d-36ba-49a5-9155-ea2fa175f8a0","path":"sprites/SprXButtonControl/SprXButtonControl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"2874cc19-df52-4f6a-ac8d-a40b99eb412d","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"511c407c-5ed6-4c42-9044-cb5c38be4f5c","path":"sprites/SprXButtonControl/SprXButtonControl.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"b48ec908-80fa-4374-83d0-c770bdd33221","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

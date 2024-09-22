@@ -25,17 +25,13 @@ switch(controlScheme) {
 	}
 }
 
-if(attack and alarm[2] < 0) alarm[2] = (attackSpeed - attackDuration + 0.1)*fps;
 
-if(alarm[0] < 0 and attack) {
-	attacking = true;
-	alarm[0] = attackSpeed*fps;
-	instance_activate_object(hitBoxID);
-	alarm[1] = attackDuration*fps;
-}
 
 if(is_nan(velocityX)) velocityX  = 0;
 if(is_nan(velocityY)) velocityY  = 0;
+
+
+
 
 if((velocityX != 0 or velocityY != 0) and !attacking) {
 	var temp = normalise(velocityX, velocityY);
@@ -43,12 +39,29 @@ if((velocityX != 0 or velocityY != 0) and !attacking) {
 	attackDirY = temp[1];
 }
 
-velocityX *= moveSpeed*delta_time/100000*(attackSlowDown*attacking + !attacking);
-velocityY *= moveSpeed*delta_time/100000*(attackSlowDown*attacking + !attacking);
+if(attack and alarm[2] < 0) alarm[2] = (attackSpeed - attackDuration + 0.1)*fps;
 
-move_and_collide(velocityX, velocityY, [ObjWall, ObjHole]);
+if(alarm[0] < 0 and attack) {
+	attacking = true;
+	alarm[0] = attackSpeed*fps;
+	
+	instance_activate_object(hitBoxID);
+	hitBoxID.dirX = attackDirX;
+	hitBoxID.dirY = attackDirY;
+	
+	alarm[1] = attackDuration*fps;
+}
 
 if(attacking) {
 	hitBoxID.x = x + attackDirX*32;
 	hitBoxID.y = y + attackDirY*32;
 }
+
+
+
+
+
+velocityX *= moveSpeed*delta_time/100000*(attackSlowDown*attacking + !attacking);
+velocityY *= moveSpeed*delta_time/100000*(attackSlowDown*attacking + !attacking);
+
+move_and_collide(velocityX, velocityY, [ObjWall, ObjHole]);

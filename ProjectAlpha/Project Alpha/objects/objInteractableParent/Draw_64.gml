@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-function onButtonPress(objID) constructor {
-}
+if(isPressed) onButtonPress(objID);

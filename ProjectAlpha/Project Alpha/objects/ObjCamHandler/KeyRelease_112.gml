@@ -15,7 +15,13 @@ if(playerHandlerID.playerCount == 0) {
 	return;
 }
 playerPos = [[-1, -1], [-1, -1], [-1, -1], [-1, -1]];
+playerDimension = [[-1, -1], [-1, -1], [-1, -1], [-1, -1]];
 var pos = 0;
+if(playerHandlerID.playerCount == 3) {
+	surface_set_target(application_surface);
+	draw_clear_alpha(c_black, 1);
+	surface_reset_target();
+}
 for(var i = 0; i < 4; i++) if(playerHandlerID.players[i].controlScheme != "") {
 	var playerID = playerHandlerID.players[i];
 	var xx = playerID.x;			
@@ -31,8 +37,7 @@ for(var i = 0; i < 4; i++) if(playerHandlerID.players[i].controlScheme != "") {
 			
 			playerPos[i] = [0, 0]; 
 			
-			view_set_wport(i, window_get_width());
-			view_set_hport(i, window_get_height());
+			playerDimension[i] = [window_get_width(), window_get_height()]
 			
 			view_visible[i] = true;
 			break;
@@ -47,8 +52,8 @@ for(var i = 0; i < 4; i++) if(playerHandlerID.players[i].controlScheme != "") {
 			
 			playerPos[i] = [pos*window_get_width()/2, 0];
 			
-			view_set_wport(i, window_get_width()/2);			
-			view_set_hport(i, window_get_height());
+			playerDimension[i] = [window_get_width()/2, window_get_height()]
+
 			view_visible[i] = true;
 			pos++;
 			break;
@@ -63,8 +68,7 @@ for(var i = 0; i < 4; i++) if(playerHandlerID.players[i].controlScheme != "") {
 			
 			playerPos[i] = [(i%2)*window_get_width()/2, floor(i/2)*window_get_height()/2];
 			
-			view_set_wport(i, window_get_width()/2);			
-			view_set_hport(i, window_get_height()/2);
+			playerDimension[i] = [window_get_width()/2, window_get_height()/2]
 			
 			view_visible[i] = true;
 			break;
@@ -72,4 +76,7 @@ for(var i = 0; i < 4; i++) if(playerHandlerID.players[i].controlScheme != "") {
 	}
 	view_set_xport(i, playerPos[i][0]);
 	view_set_yport(i, playerPos[i][1]);
+	
+	view_set_wport(i, playerDimension[i][0]);			
+	view_set_hport(i, playerDimension[i][1]);
 }
