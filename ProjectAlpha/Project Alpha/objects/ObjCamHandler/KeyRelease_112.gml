@@ -9,8 +9,8 @@ if(playerHandlerID.playerCount == 0) {
 	camera_set_view_pos(view_camera[0], 0, 0);
 	camera_set_view_size(view_camera[0], camWidth, camHeight);
 	camera_set_view_target(view_camera[0], noone);
-	view_set_wport(0, window_get_width());
-	view_set_hport(0, window_get_height());
+	view_set_wport(0, windowWidth);
+	view_set_hport(0, windowHeight);
 	view_visible[0] = true;
 	return;
 }
@@ -37,22 +37,22 @@ for(var i = 0; i < 4; i++) if(playerHandlerID.players[i].controlScheme != "") {
 			
 			playerPos[i] = [0, 0]; 
 			
-			playerDimension[i] = [window_get_width(), window_get_height()]
+			playerDimension[i] = [windowWidth, windowHeight]
 			
 			view_visible[i] = true;
 			break;
 		}
 		case(2): {
-			camera_set_view_pos(view_camera[i], xx - camWidth/4, yy - camHeight/2);
+			camera_set_view_pos(view_camera[i], xx - camWidth/4*1.5, yy - camHeight/2*1.5);
 			
-			camera_set_view_size(view_camera[i], camWidth/2, camHeight);
-			camera_set_view_border(view_camera[i], xBorder/2, yBorder);
+			camera_set_view_size(view_camera[i], camWidth/2*1.5, camHeight*1.5);
+			camera_set_view_border(view_camera[i], xBorder/2*1.5, yBorder*1.5);
 			
 			camera_set_view_target(view_camera[i], playerID);
 			
-			playerPos[i] = [pos*window_get_width()/2, 0];
+			playerPos[i] = [pos*windowWidth/2, 0];
 			
-			playerDimension[i] = [window_get_width()/2, window_get_height()]
+			playerDimension[i] = [windowWidth/2, windowHeight]
 
 			view_visible[i] = true;
 			pos++;
@@ -66,9 +66,9 @@ for(var i = 0; i < 4; i++) if(playerHandlerID.players[i].controlScheme != "") {
 			
 			camera_set_view_target(view_camera[i], playerID);
 			
-			playerPos[i] = [(i%2)*window_get_width()/2, floor(i/2)*window_get_height()/2];
+			playerPos[i] = [(i%2)*windowWidth/2, floor(i/2)*windowHeight/2];
 			
-			playerDimension[i] = [window_get_width()/2, window_get_height()/2]
+			playerDimension[i] = [windowWidth/2, windowHeight/2]
 			
 			view_visible[i] = true;
 			break;
