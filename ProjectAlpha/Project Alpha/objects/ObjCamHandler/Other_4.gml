@@ -6,3 +6,4 @@ for(var i = 0; i < 4; i++) {
 }
 camera_set_view_pos(view_camera[0], 0, 0);
 view_visible[0] = true;
+alarm[0] = 1;

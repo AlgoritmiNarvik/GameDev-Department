@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-if(playerHandlerID.controllerSelect) return;
 scrCam();

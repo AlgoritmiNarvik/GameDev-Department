@@ -53,11 +53,14 @@
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
     {"id":{"name":"ObjPlayerHandler","path":"objects/ObjPlayerHandler/ObjPlayerHandler.yy",},},
     {"id":{"name":"objPlayerHitBox","path":"objects/objPlayerHitBox/objPlayerHitBox.yy",},},
+    {"id":{"name":"ObjTestRoomCeahing","path":"objects/ObjTestRoomCeahing/ObjTestRoomCeahing.yy",},},
     {"id":{"name":"ObjTestSign","path":"objects/ObjTestSign/ObjTestSign.yy",},},
     {"id":{"name":"ObjWall","path":"objects/ObjWall/ObjWall.yy",},},
     {"id":{"name":"InitialisingRoom","path":"rooms/InitialisingRoom/InitialisingRoom.yy",},},
     {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
+    {"id":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},},
     {"id":{"name":"normalise","path":"scripts/normalise/normalise.yy",},},
+    {"id":{"name":"scrCam","path":"scripts/scrCam/scrCam.yy",},},
     {"id":{"name":"scrPause","path":"scripts/scrPause/scrPause.yy",},},
     {"id":{"name":"sprArrowKeysControls","path":"sprites/sprArrowKeysControls/sprArrowKeysControls.yy",},},
     {"id":{"name":"sprControllerControls","path":"sprites/sprControllerControls/sprControllerControls.yy",},},
@@ -84,6 +87,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"InitialisingRoom","path":"rooms/InitialisingRoom/InitialisingRoom.yy",},},
     {"roomId":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
+    {"roomId":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

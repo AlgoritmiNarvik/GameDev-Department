@@ -12,6 +12,7 @@ switch(async_load[? "event_type"]) {
 		for(var i = 0; i < 4; i++) {
 			if(players[i].inputDevice == pad) {
 				players[i].controlScheme = "";
+				controlSchemeList[i] = "";
 				players[i].inputDevice = -1;
 				ds_map_replace(gamepads, pad, 0);
 				playerCount--;

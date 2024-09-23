@@ -19,5 +19,5 @@ draw_sprite_stretched(sprControllerControls, animationFrame, camHandler.windowWi
 draw_set_color(make_color_rgb(240, 240, 240));
 for(var i = 0; i < 4; i++) {
 	draw_rectangle(camHandler.windowWidth/2 + 250*i - 500 + 25, camHandler.windowHeight/2 - 150, camHandler.windowWidth/2 + 250*i - 300 + 25, camHandler.windowHeight/2 + 200, false);
-	if(players[i].controlScheme != "") draw_sprite(sprTemp, 0, camHandler.windowWidth/2 + 250*i - 500 + 25 + 100 - 16, camHandler.windowHeight/2);
+	if(controlSchemeList[i] != "") draw_sprite(sprTemp, 0, camHandler.windowWidth/2 + 250*i - 500 + 25 + 100 - 16, camHandler.windowHeight/2);
 }
