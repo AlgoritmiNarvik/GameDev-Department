@@ -1,3 +1,3 @@
-/// @description Insert description here
+/// @description One frame delay
 // You can write your code in this editor
-scrCam();
+if(!menu) scrCam();
