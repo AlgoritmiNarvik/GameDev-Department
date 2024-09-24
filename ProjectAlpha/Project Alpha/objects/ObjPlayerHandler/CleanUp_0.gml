@@ -1,3 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
+//Destroy map of all connected controllers
 ds_map_destroy(gamepads);

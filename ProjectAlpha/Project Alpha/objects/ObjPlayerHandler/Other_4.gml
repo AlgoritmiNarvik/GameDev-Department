@@ -22,5 +22,6 @@ for(var i = 0; i < 4; i++) {
 		instance_deactivate_object(players[i]);
 	} else {
 		players[i].controlScheme = controlSchemeList[i];
+		players[i].inputDevice = playerInputDeviceList[i];
 	}
 }

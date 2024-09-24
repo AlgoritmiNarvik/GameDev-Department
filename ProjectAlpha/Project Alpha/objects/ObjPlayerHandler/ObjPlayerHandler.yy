@@ -39,6 +39,7 @@
     {"$GMObjectProperty":"v1","%Name":"arrowKeys","filters":[],"listItems":[],"multiselect":false,"name":"arrowKeys","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"controlSchemeList","filters":[],"listItems":[],"multiselect":false,"name":"controlSchemeList","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":6,},
     {"$GMObjectProperty":"v1","%Name":"animationFrame","filters":[],"listItems":[],"multiselect":false,"name":"animationFrame","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"camHandler","filters":[],"listItems":[],"multiselect":false,"name":"camHandler","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"ObjCamHandler","path":"objects/ObjCamHandler/ObjCamHandler.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"ObjCamHandler","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

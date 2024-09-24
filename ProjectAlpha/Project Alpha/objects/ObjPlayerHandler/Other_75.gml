@@ -14,6 +14,7 @@ switch(async_load[? "event_type"]) {
 				players[i].controlScheme = "";
 				controlSchemeList[i] = "";
 				players[i].inputDevice = -1;
+				playerInputDeviceList[i] = -1;
 				ds_map_replace(gamepads, pad, 0);
 				playerCount--;
 				break;

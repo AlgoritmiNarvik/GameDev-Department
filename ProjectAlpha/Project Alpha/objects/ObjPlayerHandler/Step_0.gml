@@ -1,60 +1,66 @@
-/// @description Insert description here
-// You can write your code in this editor
+
 
 if(!controllerSelect) return;
+var controlScheme = "";
+var inputDevice = -1;
+var nothingAddRemove = 0
+
 if(keyboard_check_pressed(ord("W")) and keyboard_check(ord("A")) and keyboard_check(ord("D"))) {
-	for(var i = 0; i < 4; i++) {
-		if(!WASD and controlSchemeList[i] == "") {
-			players[i].controlScheme = "WASD";
-			controlSchemeList[i] = "WASD";
-			WASD = true;
-			playerCount++;
-			return;
-		} else if(players[i].controlScheme == "WASD") {
-			players[i].controlScheme = "";
-			controlSchemeList[i] = "";
-			WASD = false;
-			playerCount--;
-			return;
-		}
-	}
+	controlScheme = "WASD";
+	nothingAddRemove += 1 + WASD;
 }
 
 if(keyboard_check_pressed(vk_up) and keyboard_check(vk_right) and keyboard_check(vk_left)) {
-	for(var i = 0; i < 4; i++) {
-		if(!arrowKeys and controlSchemeList[i] == "") {
-			players[i].controlScheme = "arrowKeys";
-			controlSchemeList[i] = "arrowKeys"
-			arrowKeys = true;
-			playerCount++;
-			return;
-		} else if(players[i].controlScheme == "arrowKeys") {
-			players[i].controlScheme = "";
-			controlSchemeList[i] = ""
-			arrowKeys = false;
-			playerCount--;
-			return;
-		}
-	}
+	controlScheme = "arrowKeys";
+	nothingAddRemove += 1 + arrowKeys;
 }
-for(var i = ds_map_find_first(gamepads); i != undefined; i = ds_map_find_next(gamepads, i)) {
+
+for(var i = ds_map_find_first(gamepads); i != undefined; i = ds_map_find_next(gamepads, i))
 	if(gamepad_button_check_pressed(i, gp_face1) and gamepad_button_check(i, gp_shoulderl) and gamepad_button_check(i, gp_shoulderr)) {
-		for(var j = 0; j < 4; j++) {
-			if(controlSchemeList[j] = "" and ds_map_find_value(gamepads, i) == 0) {
-				players[j].controlScheme = "controller";
-				controlSchemeList[j] = "controller";
-				players[j].inputDevice = i;
-				ds_map_replace(gamepads, i, 1);
-				playerCount++;
-				return;
-			} else if(players[j].inputDevice == i) {
-				players[j].controlScheme = "";
-				controlSchemeList[j] = "";
-				players[j].inputDevice = -1;
-				ds_map_replace(gamepads, i, 0);
-				playerCount--;
-				return;
-			}
+	controlScheme = "controller";
+	inputDevice = i;
+	nothingAddRemove += 1 + ds_map_find_value(gamepads, i);
+}
+
+if(!nothingAddRemove) return;
+
+for(var i = 0; i < 4; i++) {
+	if(nothingAddRemove == 1 and controlSchemeList[i] == "") {
+		controlSchemeList[i] = controlScheme;
+		players[i].controlScheme = controlScheme;
+		players[i].inputDevice = inputDevice;
+		playerInputDeviceList[i] = inputDevice;
+		switch(controlScheme) {
+		case("WASD"):
+			WASD = true;
+			break;
+		case("arrowKeys"):
+			arrowKeys = true;
+			break;
+		case("controller"):
+			ds_map_replace(gamepads, inputDevice, 1);
+			break;
 		}
+		playerCount++;
+		return;
+	} 
+	if(nothingAddRemove == 2 and controlSchemeList[i] == controlScheme) {
+		controlSchemeList[i] = "";
+		players[i].controlScheme = "";
+		players[i].inputDevice = -1;
+		playerInputDeviceList[i] = -1;
+		switch(controlScheme) {
+		case("WASD"):
+			WASD = false;
+			break;
+		case("arrowKeys"):
+			arrowKeys = false;
+			break;
+		case("controller"):
+			ds_map_replace(gamepads, inputDevice, 0);
+			break;
+		}
+		playerCount--;
+		return;
 	}
 }
