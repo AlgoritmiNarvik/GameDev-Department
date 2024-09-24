@@ -5,7 +5,7 @@ var i = 0
 var size = 54;
 var sp = 5;
 var topCorner = instance_find(ObjCamHandler, 0);
-topCorner = topCorner.playerPos[playerNumber];
+topCorner = topCorner.camPosInWindow[playerNumber];
 draw_set_alpha(1);
 if(topCorner[0] != 0) show_debug_message(topCorner[0]);
 for(; i < fullHarts; i++) {

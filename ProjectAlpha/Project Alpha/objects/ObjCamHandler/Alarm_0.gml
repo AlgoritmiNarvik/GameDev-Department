@@ -1,3 +1,4 @@
 /// @description One frame delay
-// You can write your code in this editor
-if(!menu) scrCam();
+
+//Determine camera in use
+event_user(0);

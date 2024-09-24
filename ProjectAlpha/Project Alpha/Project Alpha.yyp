@@ -60,7 +60,6 @@
     {"id":{"name":"testRoom","path":"rooms/testRoom/testRoom.yy",},},
     {"id":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},},
     {"id":{"name":"normalise","path":"scripts/normalise/normalise.yy",},},
-    {"id":{"name":"scrCam","path":"scripts/scrCam/scrCam.yy",},},
     {"id":{"name":"scrPause","path":"scripts/scrPause/scrPause.yy",},},
     {"id":{"name":"sprArrowKeysControls","path":"sprites/sprArrowKeysControls/sprArrowKeysControls.yy",},},
     {"id":{"name":"sprControllerControls","path":"sprites/sprControllerControls/sprControllerControls.yy",},},

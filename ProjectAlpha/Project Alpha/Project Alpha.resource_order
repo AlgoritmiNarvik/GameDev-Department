@@ -35,7 +35,6 @@
     {"name":"InitialisingRoom","order":2,"path":"rooms/InitialisingRoom/InitialisingRoom.yy",},
     {"name":"testRoom","order":1,"path":"rooms/testRoom/testRoom.yy",},
     {"name":"testRoom2","order":3,"path":"rooms/testRoom2/testRoom2.yy",},
-    {"name":"scrCam","order":2,"path":"scripts/scrCam/scrCam.yy",},
     {"name":"scrPause","order":1,"path":"scripts/scrPause/scrPause.yy",},
     {"name":"sprArrowKeysControls","order":1,"path":"sprites/sprArrowKeysControls/sprArrowKeysControls.yy",},
     {"name":"sprControllerControls","order":2,"path":"sprites/sprControllerControls/sprControllerControls.yy",},

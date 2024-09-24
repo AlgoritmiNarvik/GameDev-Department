@@ -1,4 +1,7 @@
 /// @description Insert description here
-// You can write your code in this editor
+
+//Check for player change done
 if(playerHandlerID.controllerSelect) return;
-if(!menu) scrCam();
+
+//Redetermine camera in use
+event_user(0);

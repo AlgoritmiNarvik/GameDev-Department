@@ -1,5 +1,6 @@
 /// @description Destroy cameras
-// You can write your code in this editor
+
+//Clean up camera memory
 for(var i = 0; i < 4; i++) {
 	camera_destroy(view_camera[i]);
 }
