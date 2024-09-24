@@ -30,6 +30,7 @@
     {"name":"ObjInit","order":2,"path":"objects/ObjInit/ObjInit.yy",},
     {"name":"ObjPauseHandler","order":1,"path":"objects/ObjPauseHandler/ObjPauseHandler.yy",},
     {"name":"objPlayerHitBox","order":1,"path":"objects/objPlayerHitBox/objPlayerHitBox.yy",},
+    {"name":"ObjPlayerParent","order":1,"path":"objects/ObjPlayerParent/ObjPlayerParent.yy",},
     {"name":"ObjTestRoomCeahing","order":5,"path":"objects/ObjTestRoomCeahing/ObjTestRoomCeahing.yy",},
     {"name":"ObjTestSign","order":1,"path":"objects/ObjTestSign/ObjTestSign.yy",},
     {"name":"InitialisingRoom","order":2,"path":"rooms/InitialisingRoom/InitialisingRoom.yy",},

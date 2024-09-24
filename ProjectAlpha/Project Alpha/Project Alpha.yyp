@@ -53,6 +53,7 @@
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
     {"id":{"name":"ObjPlayerHandler","path":"objects/ObjPlayerHandler/ObjPlayerHandler.yy",},},
     {"id":{"name":"objPlayerHitBox","path":"objects/objPlayerHitBox/objPlayerHitBox.yy",},},
+    {"id":{"name":"ObjPlayerParent","path":"objects/ObjPlayerParent/ObjPlayerParent.yy",},},
     {"id":{"name":"ObjTestRoomCeahing","path":"objects/ObjTestRoomCeahing/ObjTestRoomCeahing.yy",},},
     {"id":{"name":"ObjTestSign","path":"objects/ObjTestSign/ObjTestSign.yy",},},
     {"id":{"name":"ObjWall","path":"objects/ObjWall/ObjWall.yy",},},

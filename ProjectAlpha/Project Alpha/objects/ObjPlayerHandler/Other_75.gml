@@ -18,6 +18,10 @@ switch(async_load[? "event_type"]) {
 				ds_map_replace(gamepads, pad, 0);
 				playerCount--;
 				break;
+				//Redetermine camera in use
+				with(camHandler) {
+					event_user(0);
+				}
 			}
 		}
 	    break;

@@ -6,3 +6,7 @@ for(var i = 0; i < 4; i++) if(controlSchemeList[i] == ""){
 } else {
 	instance_activate_object(players[i]);
 }
+//Redetermine camera in use
+with(camHandler) {
+	event_user(0);
+}

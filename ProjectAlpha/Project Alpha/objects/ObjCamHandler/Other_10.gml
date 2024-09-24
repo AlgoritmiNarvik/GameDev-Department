@@ -76,9 +76,9 @@ for(var i = 0; i < 4; i++) if(playerHandlerID.controlSchemeList[i] != "") {
 			
 			camPosInWindow[i] = [(i%2)*windowWidth/2, floor(i/2)*windowHeight/2];
 			
-			camDimension[i] = [windowWidth/2, windowHeight/2]
+			camDimensionInWindow[i] = [windowWidth/2, windowHeight/2]
 			
-			camPosInRoomInWindow[i] = [xx - camWidth/2, yy - camHeight/2];
+			camPosInRoom[i] = [xx - camWidth/2, yy - camHeight/2];
 
 			camDimensionInRoom[i] = [camWidth, camHeight];
 			

@@ -3,7 +3,7 @@
 if(!controllerSelect) return;
 var controlScheme = "";
 var inputDevice = -1;
-var nothingAddRemove = 0
+var nothingAddRemove = 0;
 
 if(keyboard_check_pressed(ord("W")) and keyboard_check(ord("A")) and keyboard_check(ord("D"))) {
 	controlScheme = "WASD";
