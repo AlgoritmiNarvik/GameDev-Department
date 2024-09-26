@@ -1,4 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Toggle controller selection on and off
+
 controllerSelect = !controllerSelect;
 scrPause();
