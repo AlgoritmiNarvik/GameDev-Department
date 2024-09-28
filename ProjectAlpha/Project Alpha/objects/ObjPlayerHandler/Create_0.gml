@@ -10,4 +10,5 @@ controlSchemeList = ["","","",""];
 //Initiation list of player input devices
 playerInputDeviceList = [-1, -1, -1, -1]
 
+//Get camera handler
 camHandler = instance_find(ObjCamHandler, 0);
