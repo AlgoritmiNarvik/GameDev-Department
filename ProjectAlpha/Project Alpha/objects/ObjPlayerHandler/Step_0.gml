@@ -11,7 +11,7 @@ var inputDevice = -1;
 var nothingAddRemove = 0;
 
 // Check for the WASD input key
-if(keyboard_check_pressed(ord("W")) and keyboard_check(ord("A")) and keyboard_check(ord("D"))) {
+if(keyboard_check_pressed(ord("W")) and keyboard_check(ord("A")) and keyboard_check(ord("D")) and controlScheme == "") {
 	// Set control scheme
 	controlScheme = "WASD";
 	// Add one to show that a control scheme has been chosen
@@ -20,7 +20,7 @@ if(keyboard_check_pressed(ord("W")) and keyboard_check(ord("A")) and keyboard_ch
 }
 
 // Check for the arrow keys input key
-if(keyboard_check_pressed(vk_up) and keyboard_check(vk_right) and keyboard_check(vk_left)) {
+if(keyboard_check_pressed(vk_up) and keyboard_check(vk_right) and keyboard_check(vk_left) and controlScheme == "") {
 	// Set control scheme
 	controlScheme = "arrowKeys";
 	// Add one to show that a control scheme has been chosen
@@ -29,18 +29,19 @@ if(keyboard_check_pressed(vk_up) and keyboard_check(vk_right) and keyboard_check
 }
 
 //Loop through all controllers
-for(var i = ds_map_find_first(gamepads); i != undefined; i = ds_map_find_next(gamepads, i))
+for(var i = ds_map_find_first(gamepads); i != undefined; i = ds_map_find_next(gamepads, i)) {
+	if(controlScheme != "") break;
 	// Check for the controller input key
 	if(gamepad_button_check_pressed(i, gp_face1) and gamepad_button_check(i, gp_shoulderl) and gamepad_button_check(i, gp_shoulderr)) {
-	// Set control scheme
-	controlScheme = "controller";
-	// Set input device
-	inputDevice = i;
-	// Add one to show that a control scheme has been chosen
-	// and add input device use indicator to determine whether to add control scheme or remove control scheme
-	nothingAddRemove += 1 + ds_map_find_value(gamepads, i);
+		// Set control scheme
+		controlScheme = "controller";
+		// Set input device
+		inputDevice = i;
+		// Add one to show that a control scheme has been chosen
+		// and add input device use indicator to determine whether to add control scheme or remove control scheme
+		nothingAddRemove += 1 + ds_map_find_value(gamepads, i);
+	}
 }
-
 // Check if no control scheme has been added or removed if so return
 if(!nothingAddRemove) return;
 

@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+
 draw_self();
 var playerID = instance_place(x,y,objPlayer);
 
