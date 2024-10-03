@@ -30,7 +30,6 @@
     {"$GMObjectProperty":"v1","%Name":"inputDevice","filters":[],"listItems":[],"multiselect":false,"name":"inputDevice","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"attackDirX","filters":[],"listItems":[],"multiselect":false,"name":"attackDirX","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
     {"$GMObjectProperty":"v1","%Name":"attackDirY","filters":[],"listItems":[],"multiselect":false,"name":"attackDirY","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
-    {"$GMObjectProperty":"v1","%Name":"controlScheme","filters":[],"listItems":[],"multiselect":false,"name":"controlScheme","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

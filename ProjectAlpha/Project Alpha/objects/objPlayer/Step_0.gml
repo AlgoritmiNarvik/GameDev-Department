@@ -1,3 +1,8 @@
+if(hp <= 0) {
+	room_restart();
+}
+
+
 switch(controlScheme) {
 	case("WASD"): {
 		velocityX = keyboard_check_direct(ord("D")) - keyboard_check_direct(ord("A"));

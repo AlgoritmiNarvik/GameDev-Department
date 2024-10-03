@@ -16,6 +16,7 @@
     {"name":"inst_602C1F41","path":"rooms/testRoom/testRoom.yy",},
     {"name":"inst_4CF68D52","path":"rooms/testRoom/testRoom.yy",},
     {"name":"inst_57559710","path":"rooms/testRoom/testRoom.yy",},
+    {"name":"inst_7B3F655F","path":"rooms/testRoom/testRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -39,6 +40,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ObjTestRoomCeahing","path":"objects/ObjTestRoomCeahing/ObjTestRoomCeahing.yy",},"propertyId":{"name":"destY","path":"objects/ObjTestRoomCeahing/ObjTestRoomCeahing.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"850",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"ObjTestRoomCeahing","path":"objects/ObjTestRoomCeahing/ObjTestRoomCeahing.yy",},"propertyId":{"name":"roomTo","path":"objects/ObjTestRoomCeahing/ObjTestRoomCeahing.yy",},"resource":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"testRoom2",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":5.0,"scaleY":3.0,"x":672.0,"y":0.0,},
+        {"$GMRInstance":"v1","%Name":"inst_7B3F655F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7B3F655F","objectId":{"name":"ObjBAE","path":"objects/ObjBAE/ObjBAE.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":352.0,"y":736.0,},
       ],"layers":[],"name":"entities","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"groundDecor2","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"groundDecor2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":0,"SerialiseWidth":0,"TileSerialiseData":[],},"tilesetId":null,"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRAssetLayer":"","%Name":"wallAssets","assets":[],"depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"wallAssets","properties":[],"resourceType":"GMRAssetLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},

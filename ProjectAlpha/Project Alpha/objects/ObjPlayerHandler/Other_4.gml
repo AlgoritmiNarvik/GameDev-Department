@@ -29,7 +29,7 @@ for(var i = 0; i < 4; i++) {
 	players[i].playerNumber = i;
 	
 	// Check if player has a controls game
-	 if(controlSchemeList[i] == ""){
+	if(controlSchemeList[i] == "") {
 		// Deactivate player object instant
 		instance_deactivate_object(players[i]);
 	} else {

@@ -16,6 +16,7 @@
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"GameManagement","folderPath":"folders/Objects/GameManagement.yy","name":"GameManagement","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Enemies","folderPath":"folders/Objects/Enemies.yy","name":"Enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Obstacles","folderPath":"folders/Objects/Obstacles.yy","name":"Obstacles","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"ParentObjects","folderPath":"folders/Objects/ParentObjects.yy","name":"ParentObjects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Objects/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -45,6 +46,7 @@
   },
   "name":"Project Alpha",
   "resources":[
+    {"id":{"name":"ObjBAE","path":"objects/ObjBAE/ObjBAE.yy",},},
     {"id":{"name":"ObjCamHandler","path":"objects/ObjCamHandler/ObjCamHandler.yy",},},
     {"id":{"name":"ObjHole","path":"objects/ObjHole/ObjHole.yy",},},
     {"id":{"name":"ObjInit","path":"objects/ObjInit/ObjInit.yy",},},
@@ -62,6 +64,7 @@
     {"id":{"name":"testRoom2","path":"rooms/testRoom2/testRoom2.yy",},},
     {"id":{"name":"normalise","path":"scripts/normalise/normalise.yy",},},
     {"id":{"name":"scrPause","path":"scripts/scrPause/scrPause.yy",},},
+    {"id":{"name":"SpBAE","path":"sprites/SpBAE/SpBAE.yy",},},
     {"id":{"name":"sprArrowKeysControls","path":"sprites/sprArrowKeysControls/sprArrowKeysControls.yy",},},
     {"id":{"name":"sprControllerControls","path":"sprites/sprControllerControls/sprControllerControls.yy",},},
     {"id":{"name":"SprEButtonKeyboard","path":"sprites/SprEButtonKeyboard/SprEButtonKeyboard.yy",},},
